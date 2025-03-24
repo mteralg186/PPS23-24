@@ -9,7 +9,6 @@
   <link rel="shortcut icon" href="./assets/images/mbr-206x191.png" type="image/x-icon">
   <meta name="description" content="">
   
-  
   <title>Inicio</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -21,8 +20,6 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=Wf9Ojj"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=Wf9Ojj" type="text/css">
-
-  
 </head>
 <body>
 
@@ -52,11 +49,11 @@
               <div class="col-12 col-lg col-md-12">
               <!-- <img src="assets/images/mbr-206x191.png" alt="Mobirise Website Builder" style="height: 50px;"> -->
                 <div class="text-wrapper align-left">
-                  <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>Bienvenido a tu red social favorita</strong></h1>
+                  <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>Casual Fry-Days: Bienvenido a tu nueva red social</strong></h1>
                   <p class="mbr-text mbr-fonts-style mb-4 display-7">
-                    Encuentra amigos en la mejor red social para conecer gente joven&nbsp;&nbsp;<br>
+                    Conecta con otros compañeros en la nueva red de trabajo&nbsp;&nbsp;<br>
                   </p>
-                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-black display-7" href="/registro">Registrate</a></div>
+                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-black display-7" href="/registro">Hazte Fryer</a></div>
                 </div>
               </div>
             </div>
@@ -67,8 +64,28 @@
     <a href="/recovery">recovery</a>
   </section>
 
+<!-- Aviso de Cookies en Index -->
+<div id="cookie-consent" style="position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; text-align: center; padding: 10px; z-index: 1000; display: none;">
+    Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.
+    <button onclick="acceptCookies()" style="margin-left: 10px; padding: 5px 10px; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Aceptar</button>
+</div>
 
+<script>
+function checkCookieConsent() {
+    return localStorage.getItem('cookieConsent') === 'true';
+}
 
+function acceptCookies() {
+    localStorage.setItem('cookieConsent', 'true');
+    document.getElementById('cookie-consent').style.display = 'none';
+}
+
+window.onload = function() {
+    if (!checkCookieConsent()) {
+        document.getElementById('cookie-consent').style.display = 'block';
+    }
+};
+</script>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
